@@ -49,6 +49,7 @@ header .buttonMenu {
 
 header .buttonMenu:active {
     border: var(--main-color)  1px solid;
+    
     border-radius: 5px;
 }
 
@@ -455,6 +456,7 @@ header .login button:last-child {
 
     header .buttonMenu {
         display: block;
+        border-radius: 8px;
     }
     .talents img {
         width: 100%;
