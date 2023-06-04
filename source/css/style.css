@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&display=swap');
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --subtitle-color: #101828;
+    --p-color: #667085;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow-x:hidden ;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: all .3;
+}
+
+header a:hover {
+    font-weight: 600;
+}
+
+header .buttonMenu {
+    border: none;
+    display: none;
+}
+
+header .buttonMenu:active {
+    border: var(--main-color) 1px solid;
+    border-radius: 5px;
+}
+
+header .iconMenu {
+    height: 40px;
+    /* background-color: transparent; */
+}
+
+header a .brand {
+    margin-right: 8px;
+
+}
+
+.listMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+
+header nav ul li {
+    margin-right: 32px;
+}
+
+header .login button {
+    width: 112px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: all .2s;
+}
+
+header .login button:hover {
+    font-weight: 600;
+}
+
+header .login button:last-child {
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: #FFF;
+}
+
+/* end header */
+
+/* start sobre */
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 96px;
+    text-align: center;
+}
+
+.sobre h1 {
+    color: var(--main-color);
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.sobre h2 {
+    color: var(--subtitle-color);
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+
+.sobre p {
+    color: var(--p-color);
+    font-size: 20px;
+    max-width: 791px;
+    margin-bottom: 107px;
+    padding-bottom: 0;
+}
+
+/* end sobre */
+
+/* start metricas */
+
+.metricas-container {
+    /* display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; */
+    /* margin: 0 112px 0 112px; */
+
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 0;
+}
+
+.metrica {
+    text-align: left;
+}
+
+.metrica p:first-child {
+    color: var(--main-color);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    margin-bottom: 12px;
+}
+
+.metrica h2 {
+    color: var(--subtitle-color);
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.metrica p:last-child {
+    color: var(--p-color);
+    font-size: 16px;
+    width: 280px;
+}
+
+
+/* end metricas */
+/* Medias query */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    header {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .listMenu {
+        display: none;
+    }
+
+    header .buttonMenu {
+        display: block;
+    }
+
+    /* end header */
+
+    .sobre {
+        margin: 96px auto auto auto;
+        width: 90vw;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .sobre h1 {
+        margin-bottom: -10px;
+    }
+
+    .sobre h2 {
+        margin-bottom: 30px;
+
+    }
+
+    .sobre p {
+        margin-bottom: 107px;
+    }
+
+    /* Metricas */
+
+
+
+    .metrica p:last-child {
+
+        width: 75vw;
+    }
+
+}
+
+/* start talents */
+
+.talents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.talents h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+    padding: 12px 0px;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 196px;
+}
+
+.talents h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 56px;
+    color: var(--subtitle-color);
+
+}
+
+.talents p {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.talents img {
+    margin: 0 20%;
+}
+
+.talents .talents-items {
+    margin-top: 64px;
+    align-self: flex-start;
+    margin-left: 26%;
+}
+
+.talents .talents-items h3 {
+    color: var(--subtitle-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.talents .talents-items .talents-item h4 {
+    color: var(--subtitle-color);
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.talents .talents-items .talents-item p {
+    color: var(--p-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.talents .talents-items .talents-item span {
+    margin-left: 24px;
+}
+
+/* end talents */
+
+/* start depositions */
+
+.depositions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.depositions h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color);
+    padding: 12px 0px;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 196px;
+}
+
+.depositions h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--subtitle-color);
+    width: 75%;
+    text-align: center;
+
+}
+
+.depositions p {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.depositions .deposition-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.depositions .deposition-item img {
+    width: 56px;
+}
+
+.depositions .deposition-item h4 {
+
+    color: var(--subtitle-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 0;
+
+}
+
+.depositions .deposition-item p {
+    color: var(--p-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+
+/* End depositions */
+
+/* start footer */
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    padding: 0;
+
+}
+
+.news h1 {
+    color: var(--subtitle-color);
+    font-weight: 600;
+    font-size: 36px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.news p {
+    color: var(--p-color);
+}
+
+.news form {
+    margin-top: 40px;
+    margin-bottom: 32px;
+    gap: 8px;
+}
+
+.news form input {
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    width: 360px;
+    height: 48px;
+    outline-color:   #77797e;;
+}
+
+
+.news form input::-moz-placeholder{
+    color: red !important;
+}
+.news form input::-webkit-input-placeholder{
+    padding-left: 10px;
+}
+/* .news form input:focus{
+ 
+} */
+
+.news form button {
+    background-color: var(--main-color);
+    width: 116px;
+    height: 48px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.news form button:hover{
+    font-weight: 600;
+}
+
+
+/* end footer */
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .listMenu {
+        display: none;
+    }
+
+    header .buttonMenu {
+        display: block;
+    }
+    .talents img {
+        width: 100%;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    header {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .listMenu {
+        display: none;
+    }
+
+    header .buttonMenu {
+        display: block;
+    }
+
+    .talents img {
+        width: 100%;
+    }
+
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
