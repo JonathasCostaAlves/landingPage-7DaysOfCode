@@ -48,7 +48,7 @@ header .buttonMenu {
 }
 
 header .buttonMenu:active {
-    border: var(--main-color) 1px solid;
+    border: var(--main-color)  1px solid;
     border-radius: 5px;
 }
 
@@ -239,7 +239,7 @@ header .login button:last-child {
     font-size: 14px;
     font-weight: 500;
     color: var(--main-color);
-    padding: 12px 0px;
+    padding: 12px 12px;
     background: rgba(142, 36, 36, 0.05);
     border-radius: 16px;
     margin-bottom: 20px;
@@ -312,7 +312,7 @@ header .login button:last-child {
     font-size: 14px;
     font-weight: 600;
     color: var(--main-color);
-    padding: 12px 0px;
+    padding: 12px 12px;
     background: rgba(142, 36, 36, 0.05);
     border-radius: 16px;
     margin-bottom: 20px;
@@ -408,7 +408,7 @@ header .login button:last-child {
 
 
 .news form input::-moz-placeholder{
-    color: red !important;
+    padding-left: 10px;
 }
 .news form input::-webkit-input-placeholder{
     padding-left: 10px;
@@ -434,6 +434,9 @@ header .login button:last-child {
 .news form button:hover{
     font-weight: 600;
 }
+.news form input {
+    width: 250px;
+}
 
 
 /* end footer */
@@ -456,6 +459,12 @@ header .login button:last-child {
     .talents img {
         width: 100%;
     }
+    .talents .talents-items {
+   
+        margin-left: 5%;
+    }
+ 
+ 
 
 }
 
