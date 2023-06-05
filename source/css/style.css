@@ -234,7 +234,7 @@ header .login button:last-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+   
 }
 
 .talents h1 {
@@ -246,6 +246,7 @@ header .login button:last-child {
     border-radius: 16px;
     margin-bottom: 20px;
     margin-top: 196px;
+    
 }
 
 .talents h2 {
@@ -254,6 +255,7 @@ header .login button:last-child {
     font-weight: 600;
     font-size: 56px;
     color: var(--subtitle-color);
+    text-align: center;
 
 }
 
