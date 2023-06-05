@@ -255,8 +255,9 @@ header .login button:last-child {
     font-weight: 600;
     font-size: 56px;
     color: var(--subtitle-color);
+    text-align: center;
     
-
+    
 }
 
 .talents p {
@@ -264,6 +265,7 @@ header .login button:last-child {
     margin-bottom: 64px;
     font-weight: 400;
     font-size: 20px;
+    text-align: center;
 }
 
 .talents img {
@@ -277,7 +279,6 @@ header .login button:last-child {
     width: 60vw;
     height: 136px;
     margin-bottom: 24px;
-    /* box-shadow: 1px 1px 1px #6670858e; */
 }
 
 .talents .talents-items {
@@ -483,6 +484,10 @@ header .login button:last-child {
    
         margin-left: 5%;
     }
+
+    .talents .talents-item{
+        width: 80vw;
+    }
  
  
 
@@ -506,7 +511,9 @@ header .login button:last-child {
     .talents img {
         width: 100%;
     }
-
+    .talents .talents-item{
+        width: 80vw;
+    }
 
 }
 
