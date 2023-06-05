@@ -234,6 +234,7 @@ header .login button:last-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .talents h1 {
@@ -377,7 +378,7 @@ header .login button:last-child {
     align-items: center;
     margin-top: 160px;
     padding: 0;
-
+    text-align: center;
 }
 
 .news h1 {
